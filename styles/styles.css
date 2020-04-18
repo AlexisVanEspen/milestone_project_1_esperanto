@@ -1,0 +1,69 @@
+/*  Code Institute's Milestone Project 1: Build a Static Website. 
+    Author: Alexis Van Espen. 
+*/
+
+/*  Fonts. */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap');
+
+/*  Initialize values for responsive layout. 
+    Adapted from Clarissa Peterson's Responsive Layout course on LinkedIn Learning (https://www.linkedin.com/learning/responsive-layout/). 
+*/
+html {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    margin: 15px;
+}
+img {
+	max-width: 100%;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+/*  Create grid. */
+#container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-areas: 
+    /*          1       2       3       4       5       6       7       8       9       10      11      12  */
+    /* 1  */    "logo   logo    banner  banner  banner  banner  banner  banner  banner  banner  banner  banner"
+    /* 2  */    "logo   logo    banner  banner  banner  banner  banner  banner  banner  banner  banner  banner"
+    /* 3  */    "nav    nav     content content content content content content content content content content"
+    /* 4  */    "nav    nav     content content content content content content content content content content"
+    /* 5  */    "nav    nav     content content content content content content content content content content"
+    /* 6  */    "nav    nav     content content content content content content content content content content"    
+    /* 7  */    "nav    nav     content content content content content content content content content content"    
+    /* 8  */    "nav    nav     content content content content content content content content content content"
+    /* 9  */    "nav    nav     content content content content content content content content content content"
+    /* 10 */    "nav    nav     content content content content content content content content content content"
+    /* 11 */    "nav    nav     content content content content content content content content content content"
+    /* 12 */    "footer footer footer   footer  footer  footer  footer  footer  footer  footer  footer  footer"                 
+    ;
+    border: 1px solid rgb(151, 83, 83);
+    min-height: 95vh;
+}
+header {
+    background-color: red;
+}
+#logo {
+    grid-area: logo;
+
+}
+#banner {
+    grid-area: banner;
+    
+}
+nav {
+    grid-area: nav;
+    background-color: orange;
+}
+#content {
+    grid-area: content;
+    background-color: blue;
+}
+footer {
+    grid-area: footer;
+    background-color: green;
+}
+
