@@ -52,10 +52,10 @@ Which features could we include in this release?
 # Scope of the milestone project
 For this milestone project, the scope will include all features with a score of 20 or above. Together, they represent a "MVP" (_minimum viable product_): a website that addresses the core problem in a simple way. The deliverable will be open to review, changes and improvements for the next releases.
 
-# Finding my personal "style"
-At this point, I am no big fan of Bootstrap. Although I clearly see its power for complex projects, I think it's overkill for a simple website. To some extent, it's a matter of taste and habit. The point is, how could I develop a responsive website without Bootstrap? 
+# Finding my personal style
+At this point, I am no big fan of Bootstrap. Although I clearly see its power for complex projects, I think it's overkill for a simple website. To some extent, it's a matter of taste and habit.
 
-A search on LinkedIn Learning led me to Clarissa Peterson's [_Responsive Layout course_](https://www.linkedin.com/learning/responsive-layout/ "Clarissa Peterson's Responsive Layout course on LinkedIn Learning"), released on 24th October 2018. I certainly didn't lazily copy/paste code from this course, but wish to thank the instructor for her interesting explanations.
+A search on LinkedIn Learning led me to Clarissa Peterson's [_Responsive Layout course_](https://www.linkedin.com/learning/responsive-layout/ "Clarissa Peterson's Responsive Layout course on LinkedIn Learning"), released on 24th October 2018. I certainly didn't lazily copy/paste code from this course -it would have been useless anyway-, but followed the instructor's advice, for instance to initialize the stylesheet prior to creating the grid. This is mentioned in the stylesheet.
 
 What did I retain from Bootstrap's approach?
 * The 5 breakpoints.

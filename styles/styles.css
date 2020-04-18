@@ -5,16 +5,16 @@
 /*  Fonts. */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap');
 
-/*  Initialize values for responsive layout. 
+/*  Initialize attributes for responsive layout. 
     Adapted from Clarissa Peterson's Responsive Layout course on LinkedIn Learning (https://www.linkedin.com/learning/responsive-layout/). 
 */
 html {
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
-    margin: 15px;
 }
 img {
 	max-width: 100%;
+    margin: auto;
 }
 *, *:before, *:after {
 	box-sizing: inherit;
@@ -23,7 +23,7 @@ img {
 /*  Create grid, mobile-first (max-width: 576px). */
 #container {
     display: grid;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr 4fr 1fr;
     grid-template-areas: 
     /* 1 */    "header"
     /* 2 */    "nav"
@@ -34,11 +34,13 @@ img {
 }
 header {
     grid-area: header;
-    background-color: #009900;
-}
-#logo {
+    min-height: 50vh;
+    background-image: url('/images/esperanto_flags_blue_sky.png');
+    background-size: cover;
+    /* background-color: #710000; */
 }
 #banner {
+
 }
 nav {
     grid-area: nav;
