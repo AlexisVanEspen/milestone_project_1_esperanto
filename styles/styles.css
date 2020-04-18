@@ -20,50 +20,97 @@ img {
 	box-sizing: inherit;
 }
 
-/*  Create grid. */
+/*  Create grid, mobile-first (max-width: 576px). */
 #container {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(12, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     grid-template-areas: 
-    /*          1       2       3       4       5       6       7       8       9       10      11      12  */
-    /* 1  */    "logo   logo    banner  banner  banner  banner  banner  banner  banner  banner  banner  banner"
-    /* 2  */    "logo   logo    banner  banner  banner  banner  banner  banner  banner  banner  banner  banner"
-    /* 3  */    "nav    nav     content content content content content content content content content content"
-    /* 4  */    "nav    nav     content content content content content content content content content content"
-    /* 5  */    "nav    nav     content content content content content content content content content content"
-    /* 6  */    "nav    nav     content content content content content content content content content content"    
-    /* 7  */    "nav    nav     content content content content content content content content content content"    
-    /* 8  */    "nav    nav     content content content content content content content content content content"
-    /* 9  */    "nav    nav     content content content content content content content content content content"
-    /* 10 */    "nav    nav     content content content content content content content content content content"
-    /* 11 */    "nav    nav     content content content content content content content content content content"
-    /* 12 */    "footer footer footer   footer  footer  footer  footer  footer  footer  footer  footer  footer"                 
+    /* 1 */    "header"
+    /* 2 */    "nav"
+    /* 3 */    "content"
+    /* 4 */    "footer"                
     ;
-    border: 1px solid rgb(151, 83, 83);
     min-height: 95vh;
 }
 header {
-    background-color: red;
+    grid-area: header;
+    background-color: #009900;
 }
 #logo {
-    grid-area: logo;
-
 }
 #banner {
-    grid-area: banner;
-    
 }
 nav {
     grid-area: nav;
-    background-color: orange;
+    background-color: #BF5700;
 }
 #content {
     grid-area: content;
-    background-color: blue;
+    background-color: #BF0000;
 }
 footer {
     grid-area: footer;
-    background-color: green;
+    background-color: #007373;
 }
 
+/*  Adjust grid layout at different breakpoints. */
+
+/*  Small. */
+@media (min-width: 576px) {
+    #container {
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: 
+        /* 1 */    "header"
+        /* 2 */    "nav"
+        /* 3 */    "content"
+        /* 4 */    "footer"                
+        ;
+        min-height: 95vh;
+    }
+}
+
+/*  Medium. */
+@media (min-width: 768px) {
+    #container {
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: 
+        /* 1 */    "header"
+        /* 2 */    "nav"
+        /* 3 */    "content"
+        /* 4 */    "footer"                
+        ;
+        min-height: 95vh;
+    }
+}
+
+/*  Large. */
+@media (min-width: 992px) {
+    #container {
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        /* 1 */    "header  header"
+        /* 2 */    "nav     content"
+        /* 3 */    "footer  footer"                
+        ;
+        min-height: 95vh;
+    }
+}
+
+/*  Extra-large. */
+@media (min-width: 1200px) {
+    #container {
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        /* 1 */    "header  header"
+        /* 2 */    "nav     content"
+        /* 3 */    "footer  footer"                
+        ;
+        min-height: 95vh;
+    }
+}

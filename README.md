@@ -57,7 +57,11 @@ At this point, I am no big fan of Bootstrap. Although I clearly see its power fo
 
 A search on LinkedIn Learning led me to Clarissa Peterson's [_Responsive Layout course_](https://www.linkedin.com/learning/responsive-layout/ "Clarissa Peterson's Responsive Layout course on LinkedIn Learning"), released on 24th October 2018. I certainly didn't lazily copy/paste code from this course, but wish to thank the instructor for her interesting explanations.
 
-# Credits, attributions, acknoledgements
+What did I retain from Bootstrap's approach?
+* The 5 breakpoints.
+* Design "mobile-first".
+
+# Credits, attributions, acknowledgements
 
 | File name (on this website) | File name (original) | Attribution (text) | Attribution (html) |
 | --------------------------- | -------------------- | ------------------ | ------------------ |
