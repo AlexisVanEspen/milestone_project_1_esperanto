@@ -52,6 +52,21 @@ Which features could we include in this release?
 # Scope of the milestone project
 For this milestone project, the scope will include all features with a score of 20 or above. Together, they represent a "MVP" (_minimum viable product_): a website that addresses the core problem in a simple way. The deliverable will be open to review, changes and improvements for the next releases.
 
+# Sources used beyond Code Institute's modules.
+Besides the main course, I also recurred to the following sources.
+
+## LinkedIn Learning
+* Clarissa Peterson's [_Responsive Layout_](https://www.linkedin.com/learning/responsive-layout/ "Clarissa Peterson's Responsive Layout on LinkedIn Learning").
+* Morten Rand-Hendriksen's [_CSS: Advanced Layouts with Grid_](https://www.linkedin.com/learning/css-advanced-layouts-with-grid/ "Morten Rand-Hendriksen's CSS: Advanced Layouts with Grid on LinkedIn Learning").
+
+
+# Credits, attributions, acknowledgements
+
+| File name (on this website) | File name (original) | Attribution (text) | Attribution (html) |
+| --------------------------- | -------------------- | ------------------ | ------------------ |
+| esperanto_flag.svg | Flag_of_Esperanto.svg | Gabriel Ehrnst GRUNDIN / Public domain | <a href="https://commons.wikimedia.org/wiki/File:Flag_of_Esperanto.svg" title="via Wikimedia Commons">Gabriel Ehrnst GRUNDIN</a> / Public domain |
+
+
 # Finding my personal style
 At this point, I am no big fan of Bootstrap. Although I clearly see its power for complex projects, I think it's overkill for a simple website. To some extent, it's a matter of taste and habit.
 
@@ -60,9 +75,3 @@ A search on LinkedIn Learning led me to Clarissa Peterson's [_Responsive Layout 
 What did I retain from Bootstrap's approach?
 * The 5 breakpoints.
 * Design "mobile-first".
-
-# Credits, attributions, acknowledgements
-
-| File name (on this website) | File name (original) | Attribution (text) | Attribution (html) |
-| --------------------------- | -------------------- | ------------------ | ------------------ |
-| esperanto_flag.svg | Flag_of_Esperanto.svg | Gabriel Ehrnst GRUNDIN / Public domain | <a href="https://commons.wikimedia.org/wiki/File:Flag_of_Esperanto.svg" title="via Wikimedia Commons">Gabriel Ehrnst GRUNDIN</a> / Public domain |

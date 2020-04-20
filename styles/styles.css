@@ -4,14 +4,16 @@
 
 /*  Fonts. */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Nanum+Gothic:wght@400;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
 
-/*  Initialize attributes for responsive layout. 
-    Adapted from Clarissa Peterson's Responsive Layout course on LinkedIn Learning (https://www.linkedin.com/learning/responsive-layout/). 
+/*  Initialize attributes (namely to anticipate responsive layout). 
+    Inspired by, then adapted from, Clarissa Peterson's Responsive Layout course on LinkedIn Learning (https://www.linkedin.com/learning/responsive-layout/). 
 */
 html {
     box-sizing: border-box;
     font-family: 'Nanum Gothic', sans-serif;
+    margin: 5px;
+    padding: 5px;
+    min-height: 100vh;
 }
 img {
 	max-width: 100%;
@@ -19,136 +21,79 @@ img {
 }
 *, *:before, *:after {
 	box-sizing: inherit;
+    margin: inherit;
+    padding: inherit;
 }
 a {
     text-decoration: none;
 }
 
-/*  Create grid, mobile-first (max-width: 576px). */
-#container {
-    display: grid;
-    grid-template-rows: 1fr 1fr 3fr 1fr;
-    grid-template-areas: 
-    /* 1 */    "header"
-    /* 2 */    "nav"
-    /* 3 */    "content"
-    /* 4 */    "footer"                
-    ;
-    min-height: 95vh;
+/*  Design mobile-first. Simple stack of columns. */
+body {
+    
 }
 header {
-    grid-area: header;
-    min-height: 50vh;
-    background-image: url('/images/esperanto_flags_blue_sky_extrasmall.png');
-    background-size: cover;
-    /* background-color: #710000; */
+    background-color: #009900;
+    /* background-image: url('/images/esperanto_flag.svg');
+    background-repeat: no-repeat;
+    background-size: cover; */
 }
 header h1 {
+    color: #fff;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     font-weight: 400;
-    padding:5%;
+    width: 100%;
+    height: 100%;
 }
 nav {
-    grid-area: nav;
     background-color: #BF5700;
 }
-#content {
-    grid-area: content;
+main {
     background-color: #BF0000;
 }
 footer {
-    grid-area: footer;
     background-color: #007373;
+}
+
+/*  Cards. */
+.card {
+    display: grid;
+    grid-template-columns: 5em auto;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "card-image card-text"
+        "card-image card-text"
+        ;
 }
 
 /*  Adjust grid layout at different breakpoints. */
 
-/*  Small. */
-@media (min-width: 576px) {
-    #container {
+@media screen and (min-width: 700px) {
+    body {
         display: grid;
-        grid-template-rows: 1fr 1fr 4fr 1fr;
+        grid-template-rows: 1fr 3fr 1fr;
+        grid-template-columns: 1fr 4fr;
         grid-template-areas: 
-        /* 1 */    "header"
-        /* 2 */    "nav"
-        /* 3 */    "content"
-        /* 4 */    "footer"                
-        ;
-        min-height: 95vh;
+            "header header"
+            "nav    main"
+            "footer footer"                
+            ;
     }
-
     header {
         grid-area: header;
-        min-height: 50vh;
-        background-image: url('/images/esperanto_flags_blue_sky_small.png');
-        background-size: cover;
-        /* background-color: #710000; */
+    }
+    nav {
+        grid-area: nav;
+    }
+    main {
+        grid-area: main;
+    }
+    footer {
+        grid-area: footer;
     }
 }
 
-/*  Medium. */
-@media (min-width: 768px) {
-    #container {
-        display: grid;
-        grid-template-rows: 1fr 1fr 4fr 1fr;
-        grid-template-areas: 
-        /* 1 */    "header"
-        /* 2 */    "nav"
-        /* 3 */    "content"
-        /* 4 */    "footer"                
-        ;
-        min-height: 95vh;
-    }
-    header {
-        grid-area: header;
-        min-height: 50vh;
-        background-image: url('/images/esperanto_flags_blue_sky_medium.png');
-        background-size: cover;
-        /* background-color: #710000; */
-    }
-}
+@supports (grid-area: auto) {
 
-/*  Large. */
-@media (min-width: 992px) {
-    #container {
-        display: grid;
-        grid-template-rows: 1fr 5fr 1fr;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: 
-        /* 1 */    "header  header"
-        /* 2 */    "nav     content"
-        /* 3 */    "footer  footer"                
-        ;
-        min-height: 95vh;
-    }
-    header {
-        grid-area: header;
-        min-height: 50vh;
-        background-image: url('/images/esperanto_flags_blue_sky_large.png');
-        background-size: cover;
-        /* background-color: #710000; */
-    }
-}
-
-/*  Extra-large. */
-@media (min-width: 1200px) {
-    #container {
-        display: grid;
-        grid-template-rows: 1fr 5fr 1fr;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: 
-        /* 1 */    "header  header"
-        /* 2 */    "nav     content"
-        /* 3 */    "footer  footer"                
-        ;
-        min-height: 95vh;
-    }
-    header {
-        grid-area: header;
-        min-height: 50vh;
-        background-image: url('/images/esperanto_flags_blue_sky_extralarge.png');
-        background-size: cover;
-        /* background-color: #710000; */
-    }
 }
