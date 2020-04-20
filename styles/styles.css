@@ -11,18 +11,15 @@
 html {
     box-sizing: border-box;
     font-family: 'Nanum Gothic', sans-serif;
-    margin: 5px;
-    padding: 5px;
     min-height: 100vh;
 }
 img {
 	max-width: 100%;
-    margin: auto;
 }
 *, *:before, *:after {
 	box-sizing: inherit;
-    margin: inherit;
-    padding: inherit;
+    margin: 0;
+    padding: 0;
 }
 a {
     text-decoration: none;
@@ -30,21 +27,31 @@ a {
 
 /*  Design mobile-first. Simple stack of columns. */
 body {
-    
+    margin: 5px;
+    padding: 5px;
 }
 header {
-    background-color: #009900;
-    /* background-image: url('/images/esperanto_flag.svg');
-    background-repeat: no-repeat;
-    background-size: cover; */
+    display:flex;
+    flex-direction: column;
 }
-header h1 {
+header#logo {
+    background-color: #009900;
+}
+#logo img {
+}
+#title h1, h2 {
+    background-color: #005B00;
     color: #fff;
     font-family: 'Montserrat', sans-serif;
-    text-align: center;
     font-weight: 400;
-    width: 100%;
-    height: 100%;
+    padding: 0.5em;
+    text-align: center;
+}
+#title h1 {
+    font-size: 200%;
+}
+#title h2 {
+    font-size: 100%;
 }
 nav {
     background-color: #BF5700;
