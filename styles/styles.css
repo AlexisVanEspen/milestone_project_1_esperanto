@@ -25,21 +25,19 @@ a {
     text-decoration: none;
 }
 
-/*  Design mobile-first. Simple stack of columns. */
+/*  Design mobile-first. Simple stack of columns. 
+    Older browsers, with no support for grid, can display this layout. */
 body {
     margin: 5px;
     padding: 5px;
 }
 header {
-    display:flex;
-    flex-direction: column;
+
 }
-header#logo {
+header img {
     background-color: #009900;
 }
-#logo img {
-}
-#title h1, h2 {
+header h1, h2 {
     background-color: #005B00;
     color: #fff;
     font-family: 'Montserrat', sans-serif;
@@ -47,31 +45,48 @@ header#logo {
     padding: 0.5em;
     text-align: center;
 }
-#title h1 {
+header h1 {
     font-size: 200%;
 }
-#title h2 {
+header h2 {
     font-size: 100%;
 }
 nav {
     background-color: #BF5700;
+    display: flex;
+    flex-flow: column wrap;
+}
+nav a {
+    display: block;
+    padding: 1em;
+    background-color: #fff;
+    color: #BF5700;
 }
 main {
     background-color: #BF0000;
 }
 footer {
     background-color: #007373;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+}
+footer img {
+    border-radius: 50%;
+    padding: 1em;
+    width: 93px;
+    height: 115px;
+    flex-basis: auto;
+}
+footer a {
+    color: #fff;
+    padding: 0.5em;
+    font-size: 85%;
 }
 
 /*  Cards. */
 .card {
-    display: grid;
-    grid-template-columns: 5em auto;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-        "card-image card-text"
-        "card-image card-text"
-        ;
+    
 }
 
 /*  Adjust grid layout at different breakpoints. */
