@@ -93,7 +93,23 @@ footer a {
 
 /* -------------------- Cards -------------------- */
 .card {
-    
+    display: flex; 
+    flex-flow: column wrap;
+    border-radius: 10px; 
+    height: 30em;
+    justify-content: space-between;
+}
+.card-image {
+    background-color: #F89645;
+    height: 30%;
+}
+.card h2 {
+    font-size: 90%;
+    height: 5%;
+}
+.card p {
+    display: block;
+    height: 65%;
 }
 
 /* -------------------- Adjust grid layout at different breakpoints. -------------------- */
