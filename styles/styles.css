@@ -25,12 +25,15 @@ a {
     text-decoration: none;
 }
 
-/*  Design mobile-first. Simple stack of columns. 
-    Older browsers, with no support for grid, can display this layout. */
+/*  Design mobile-first. Simple stack of columns. Older browsers, with no support for grid, can display this layout. 
+    This concern for accessibility was taken for Morten Rand-Hendriksen's course on LinkedIn Learning: 
+    "CSS: Advanced Layouts with Grid" (https://www.linkedin.com/learning/css-advanced-layouts-with-grid/). */
 body {
     margin: 5px;
     padding: 5px;
 }
+
+/*  -------------------- Header -------------------- */
 header {
 
 }
@@ -51,6 +54,8 @@ header h1 {
 header h2 {
     font-size: 100%;
 }
+
+/* -------------------- Navigation -------------------- */
 nav {
     background-color: #BF5700;
     display: flex;
@@ -58,64 +63,68 @@ nav {
 }
 nav a {
     display: block;
-    padding: 1em;
+    padding: 2em 1em;
     background-color: #fff;
     color: #BF5700;
 }
 main {
     background-color: #BF0000;
 }
+
+/* -------------------- Footer -------------------- */
 footer {
     background-color: #007373;
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
 }
-footer img {
+footer > div.thumbnail {
     border-radius: 50%;
     padding: 1em;
-    width: 93px;
-    height: 115px;
-    flex-basis: auto;
+    margin: 1em;
+    width: 5em;
+    height: 5em;
+    background-color: #fff;
 }
 footer a {
     color: #fff;
-    padding: 0.5em;
-    font-size: 85%;
+    padding: 1em;
 }
 
-/*  Cards. */
+/* -------------------- Cards -------------------- */
 .card {
     
 }
 
-/*  Adjust grid layout at different breakpoints. */
-
-@media screen and (min-width: 700px) {
-    body {
-        display: grid;
-        grid-template-rows: 1fr 3fr 1fr;
-        grid-template-columns: 1fr 4fr;
-        grid-template-areas: 
-            "header header"
-            "nav    main"
-            "footer footer"                
-            ;
-    }
-    header {
-        grid-area: header;
-    }
-    nav {
-        grid-area: nav;
-    }
-    main {
-        grid-area: main;
-    }
-    footer {
-        grid-area: footer;
-    }
-}
-
+/* -------------------- Adjust grid layout at different breakpoints. -------------------- */
+/*  Instead of testing whether the browser supports "display: grid" 
+    -which some old browsers do, even though they don't support the latest features of grid-
+    Morten Rand-Hendriksen (referenced above) recommends testing for "gried-area: auto".
+*/
 @supports (grid-area: auto) {
 
+    @media screen and (min-width: 700px) {
+        body {
+            display: grid;
+            grid-template-rows: 1fr 3fr 1fr;
+            grid-template-columns: 1fr 4fr;
+            grid-template-areas: 
+                "header header"
+                "nav    main"
+                "footer footer"                
+                ;
+        }
+        header {
+            grid-area: header;
+        }
+        nav {
+            grid-area: nav;
+        }
+        main {
+            grid-area: main;
+        }
+        footer {
+            grid-area: footer;
+        }
+    }
 }
