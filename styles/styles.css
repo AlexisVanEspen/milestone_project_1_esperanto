@@ -60,15 +60,19 @@ body {
 
 /* --------------- Header --------------- */
 .site-header {
-    background-image: url('../images/hero_image.svg');
+    background-image: url('../images/hero_image.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .site-header .layout-hero {
     min-height: 50vh;
-
-
+}
+.site-header .page-section-title {
+    font-size: 2.5em;
+}
+.site-header .page-section-text {
+    font-size: 1.2em;
 }
 
 /* --------------- Footer --------------- */
