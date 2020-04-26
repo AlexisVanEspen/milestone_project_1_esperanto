@@ -53,6 +53,17 @@ body {
     font-family: var(--font-family-2);
 }
 
+.site-header {
+
+}
 .site-nav {
     
+}
+.site-footer {
+
+}
+
+.layout-social .layout-icon {
+    font-size: 2em;
+
 }
