@@ -12,29 +12,74 @@
     --font-family-2: "Montserrat", "Segoe UI", "Helvetica Neue", sans-serif;
 
     /*  Colour scheme. */
-    ––colour-01: #009900;
-    ––colour-02: #37c637;
-    ––colour-03: #09c109;
-    ––colour-04: #ffecde;
-    ––colour-05: #f5fafa;
-    ––colour-06: #d2ebeb;
-    ––colour-07: #007373;
-    ––colour-08: #bf5700;
-    ––colour-09: #bf0000;
-    ––colour-10: #7f6000;
-    ––colour-11: #005b00;
-    ––colour-12: #f2f2f2;
+    --colour-01: #009900;
+    --colour-02: #37c637;
+    --colour-03: #09c109;
+    --colour-04: #ffecde;
+    --colour-05: #f5fafa;
+    --colour-06: #d2ebeb;
+    --colour-07: #007373;
+    --colour-08: #bf5700;
+    --colour-09: #bf0000;
+    --colour-10: #7f6000;
+    --colour-11: #005b00;
+    --colour-12: #f2f2f2;
 }
 
+/*  Initialize attributes (namely to anticipate responsive layout). 
+    Inspired by, then adapted from, Clarissa Peterson's Responsive Layout course on LinkedIn Learning (https://www.linkedin.com/learning/responsive-layout/). 
+*/
+html {
+    box-sizing: border-box;
+    min-height: 100vh;
+}
+img {
+	max-width: 100%;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
 body {
     font-family: var(--font-family-1);
-    width: 1000px;
 }
 h1, h2, h3, h4, h5, h6 {
-    font-family: var(––font-family-2);
+    font-family: var(--font-family-2);
+}
+a {
+    text-decoration: none;
+}
+
+/*  –––––––––––-––– Grid definition ––––––––––––––– */
+/*  Desktop first. */
+
+@media screen and (min-width: 1000px) {
+    body {
+        display: grid;
+        grid-template-rows: 1fr 3fr 1fr;
+        grid-template-columns: 1fr 4fr;
+        grid-template-areas: 
+            "header header"
+            "nav    main"
+            "footer footer"                
+            ;
+    }
+    header {
+        grid-area: header;
+    }
+    nav {
+        grid-area: nav;
+    }
+    main {
+        grid-area: main;
+    }
+    footer {
+        grid-area: footer;
+    }
 }
 
 /*  –––––––––––-––– Header ––––––––––––––– */
 #logo {
-    background-color: linear-gradient(var(––colour-01));
+    background: linear-gradient(to bottom right, var(--colour-01) 15%, #fff 100%);
 }
