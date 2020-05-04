@@ -5,98 +5,36 @@
 /*  Google Fonts. */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Nanum+Gothic:wght@400;700;800&display=swap');
 
-/*  My own :root variables, to replace a few of Bootstrap's :root variables. */
+
+/*  My own :root variables. */
 :root {
-    /*
-	--blue: #007bff;
-	--indigo: #6610f2;
-	--purple: #6f42c1;
-	--pink: #e83e8c;
-	--red: #dc3545;
-	--orange: #fd7e14;
-	--yellow: #ffc107;
-	--green: #28a745;
-	--teal: #20c997;
-	--cyan: #17a2b8;
-	--white: #fff;
-	--gray: #6c757d;
-	--gray-dark: #343a40;
-	--primary: #007bff;
-	--secondary: #6c757d;
-	--success: #28a745;
-	--info: #17a2b8;
-	--warning: #ffc107;
-	--danger: #dc3545;
-	--light: #f8f9fa;
-	--dark: #343a40;
-
-	--breakpoint-xs: 0;
-	--breakpoint-sm: 576px;
-	--breakpoint-md: 768px;
-	--breakpoint-lg: 992px;
-	--breakpoint-xl: 1200px;
-
-	--font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-	--font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
-    */
-
-    --font-family-sans-serif: "Nanum Gothic", "Segoe UI", "Helvetica Neue", sans-serif;
-    --font-family-1: var(--font-family-sans-serif);
+    --font-family-1: "Nanum Gothic", "Segoe UI", "Helvetica Neue", sans-serif;
     --font-family-2: "Montserrat", "Segoe UI", "Helvetica Neue", sans-serif;
+
+    /*  Colour scheme. */
+    ––colour-01: #009900;
+    ––colour-02: #37c637;
+    ––colour-03: #09c109;
+    ––colour-04: #ffecde;
+    ––colour-05: #f5fafa;
+    ––colour-06: #d2ebeb;
+    ––colour-07: #007373;
+    ––colour-08: #bf5700;
+    ––colour-09: #bf0000;
+    ––colour-10: #7f6000;
+    ––colour-11: #005b00;
+    ––colour-12: #f2f2f2;
 }
 
 body {
     font-family: var(--font-family-1);
+    width: 1000px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(––font-family-2);
 }
 
-.family-2 {
-    font-family: var(--font-family-2);
-}
-
-.site-nav {
-    
-}
-
-
-/* --------------- Header --------------- */
-.site-header {
-    background-image: url('../images/hero_image.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.site-header .layout-hero {
-    min-height: 50vh;
-}
-.site-header .page-section-title {
-    font-size: 2.5em;
-}
-.site-header .page-section-text {
-    font-size: 1.2em;
-}
-
-.page-section {
-    
-}
-
-/* --------------- Cards --------------- */
-
-.layout-image {
-
-}
-.layout.title {
-
-}
-.layout-text {
-    
-}
-
-/* --------------- Footer --------------- */
-
-.site-footer {
-
-}
-.layout-social .layout-icon {
-    font-size: 2em;
-
+/*  –––––––––––-––– Header ––––––––––––––– */
+#logo {
+    background-color: linear-gradient(var(––colour-01));
 }
