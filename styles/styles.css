@@ -62,6 +62,10 @@ a {
     margin-bottom: 0.5rem;
 }
 
+#banner {
+    /* background: url('Ziko / CC BY-SA (https://creativecommons.org/licenses/by-sa/3.0)') no-repeat center center; */
+}
+
 /*  –––––––––––-––– Grid definition ––––––––––––––– */
 /*  Desktop first. */
 
@@ -75,9 +79,9 @@ a {
         grid-template-columns: 1fr 2fr;
         grid-template-areas: 
             "logo               banner"
-            "logo               navi-1"
+            "logo               nav-1"
             "doctor-explains    doctor-slides"
-            "footer             footer"                
+            "footer             nav-2"                
             ;
     }
     #logo {
@@ -86,10 +90,10 @@ a {
     #banner {
         grid-area: banner;
     }
-    header nav {
-        grid-area: navi-1;
+    .nav-1 {
+        grid-area: nav-1;
     }
-    #doctor-explains {
+    main section#doctor-explains {
         grid-area: doctor-explains;
     }
     #doctor-slides {
@@ -97,5 +101,8 @@ a {
     }
     footer {
         grid-area: footer;
+    }
+    footer > nav {
+        grid-area: nav-2;
     }
 }
