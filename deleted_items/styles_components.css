@@ -1,0 +1,62 @@
+/*  Jesperanto! Esperanto in a nutshell. 
+    Author: Alexis Van Espen.
+*/
+
+
+/*  –––––––––––-––– II. COMPONENTS ––––––––––––––– */
+
+/*  –––––––––––-––– doctor-zam ––––––––––––––– */
+.doctor-zam {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    margin-top: 4em;
+}
+.doctor-zam p {
+    background-color: #fff;
+    border-color: #fff;
+    border-radius: 10%;
+    padding: 1em;
+    width: 100%;
+}
+.doctor-zam img {
+    width: 50%;
+}
+
+/*  –––––––––––-––– nav-cards ––––––––––––––– */
+.nav-cards {
+    display: grid;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-columns: repeat(8, 1fr);
+    justify-content: space-between;
+    grid-gap: 1em;
+    margin-top: 4em;
+}
+.nav-cards a {
+    padding: 4em;
+}
+#nav-card-1 {
+    grid-row: 1 / 5;
+    grid-column: 1 / 5;
+    background-color: var(--colour-01);
+}
+#nav-card-2 {
+    grid-row: 5 / 9;
+    grid-column: 1 / 5;
+    background-color: var(--colour-07);
+}
+#nav-card-3 {
+    grid-row: 1 / 5;
+    grid-column: 5 / 9;
+    background-color: var(--colour-08);
+}
+#nav-card-4 {
+    grid-row: 5 / 9;
+    grid-column: 5 / 9;
+    background-color: var(--colour-09);
+}
+.nav-cards .doctor-zam {
+    grid-row: 3 / 7;
+    grid-column: 3 / 7;
+    width: 50%;
+}
