@@ -5,11 +5,11 @@ Author: Alexis Van Espen.
 The project is about Esperanto.
 
 In a nutshell, Esperanto is a language constructed in the 19th century. Because of its artificial nature, it's often disregarded as "not a real language", "not suited for real communication"... Hence, "not worth learning". Nothing could be farther from the truth.
-The project is to build a simple website to briefly introduce what Esperanto is, and why and how to learn it.
+The project is to build a simple website to briefly introduce what Esperanto is, and demonstrate its flexibility and expressive abilities.
 
-I will have achieved my goal is at least two members of the jury desire to know more about Esperanto.
+# What is the problem and how to solve it?
 
-# Main goals (the problem)
+## Main goals (the problem)
 Here is an outline of the project's high level goals. This is "the problem", what we need to solve.
 1. Make Esperanto better known.
 2. Dismiss common myths about this language.
@@ -17,14 +17,14 @@ Here is an outline of the project's high level goals. This is "the problem", wha
 4. Demonstrate my knowledge and commitment in this field.
 5. Connect to other language lovers around the world, possibly opening opportunities for collaboration as a developer.
 
-# Target audience
+## Target audience
 The site targets people interested in lifelong learning, specifically language learning. Based on my own experience, the age typically ranges from 25 to 65 years old. They spend a lot of time on the web, consuming online courses on learning platforms. Generally, this audience is open to change and feels empowered about their own life.
 
 The audience may be divided in two broad groups:
 1. _People who do not know anything about Esperanto._ I want to give them a flavour of the language.
 2. _People who already know about Esperanto._ I may want to connect with them, possibly as a developer.
 
-# Features (a possible solution)
+## Features (a possible solution)
 The problem can be solved through the implementation of features. They constitute "a possible solution".
 
 Arguably, the problem _could_ be solved with a movie, a play, a book... These solutions should be kept in mind. For this milestone project, however, I obviously want to build a website. This makes perfect sense: as we said, the target audience spends a lot of time on the web.
@@ -49,29 +49,47 @@ Which features could we include in this release?
 | 14 | Develop an online learning tool. | 3 | 1 | 3 | It didn't escape my attention that the material covered in subsequent modules -Javascript, Python, and so forth- could be put to good use to develop an online learning tool. At present, I wouldn't be able to do it. Additionally, such a tool needs careful planning. There is no point in replicating what already exists; and excellent online courses _do_ exist for Esperanto. | No |
 | 15 | Write a short review for each offline resource. | 2 | 1 | 2 | This is the counterpart to feature 13. Listing resources is useless; people can google keywords as well as I can. Only a review makes the link valuable. But this implies taking part in the offline event at hand. I keep this in mind for future releases. | No |
 
-# Scope of the milestone project
+## Scope of the milestone project
 For this milestone project, the scope will include all features with a score of 20 or above. Together, they represent a "MVP" (_minimum viable product_): a website that addresses the core problem in a simple way. The deliverable will be open to review, changes and improvements for the next releases.
 
-# Sources used beyond Code Institute's modules.
-Besides the main course, I also recurred to the following sources.
+# Sources of inspiration
+My philosophy is to **never** copy/paste code. I may get inspiration from others, but I **always** write my own code. 
+
+Besides the main course modules, I recurred to the following sources.
 
 ## LinkedIn Learning
 * Clarissa Peterson's [_Responsive Layout_](https://www.linkedin.com/learning/responsive-layout/ "Clarissa Peterson's Responsive Layout on LinkedIn Learning").
 * Morten Rand-Hendriksen's [_CSS: Advanced Layouts with Grid_](https://www.linkedin.com/learning/css-advanced-layouts-with-grid/ "Morten Rand-Hendriksen's CSS: Advanced Layouts with Grid on LinkedIn Learning").
 
+## W3Schools
+Every developer knows about [W3Schools](https://www.w3schools.com/). It's a comprehensive reference for several languages. 
 
-# Credits, attributions, acknowledgements
+# Credits for images
 
-| File name (on this website) | File name (original) | Attribution (text) | Attribution (html) |
-| --------------------------- | -------------------- | ------------------ | ------------------ |
-| esperanto_flag.svg | Flag_of_Esperanto.svg | Gabriel Ehrnst GRUNDIN / Public domain | <a href="https://commons.wikimedia.org/wiki/File:Flag_of_Esperanto.svg" title="via Wikimedia Commons">Gabriel Ehrnst GRUNDIN</a> / Public domain |
+## FlatIcon
+Some icons were found on [FlatIcon](https://www.flaticon.com/). The licenses are available in PDF format in the _licenses_ folder.
 
+## Wikipedia Commons
 
-# Finding my personal style
-At this point, I am no big fan of Bootstrap. Although I clearly see its power for complex projects, I think it's overkill for a simple website. To some extent, it's a matter of taste and habit.
+| Picture | File URL | Page URL | Attribution |
+| ------- | -------- | -------- | ----------- |
+| <a title="Gabriel Ehrnst GRUNDIN / Public domain" href="https://commons.wikimedia.org/wiki/File:Flag_of_Esperanto.svg"><img width="256" alt="Flag of Esperanto" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Flag_of_Esperanto.svg/256px-Flag_of_Esperanto.svg.png"></a> | https://upload.wikimedia.org/wikipedia/commons/f/f5/Flag_of_Esperanto.svg | https://commons.wikimedia.org/wiki/File:Flag_of_Esperanto.svg | <a href="https://commons.wikimedia.org/wiki/File:Flag_of_Esperanto.svg" title="via Wikimedia Commons">Gabriel Ehrnst GRUNDIN</a> / Public domain | 
+| <a title="Ziko / CC BY-SA (https://creativecommons.org/licenses/by-sa/3.0)" href="https://commons.wikimedia.org/wiki/File:2008_uk_flagoj.JPG"><img width="256" alt="2008 uk flagoj" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/2008_uk_flagoj.JPG/256px-2008_uk_flagoj.JPG"></a> | https://upload.wikimedia.org/wikipedia/commons/1/10/2008_uk_flagoj.JPG | https://commons.wikimedia.org/wiki/File:2008_uk_flagoj.JPG | <a href="https://commons.wikimedia.org/wiki/File:2008_uk_flagoj.JPG" title="via Wikimedia Commons">Ziko</a> / <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA</a> |
 
-A search on LinkedIn Learning led me to Clarissa Peterson's [_Responsive Layout course_](https://www.linkedin.com/learning/responsive-layout/ "Clarissa Peterson's Responsive Layout course on LinkedIn Learning"), released on 24th October 2018. I certainly didn't lazily copy/paste code from this course -it would have been useless anyway-, but followed the instructor's advice, for instance to initialize the stylesheet prior to creating the grid. This is mentioned in the stylesheet.
+# The Heart of the Matter: Coding
+Following the videos of the modules was easy. Developing my own personal website proved a real challenge. To be honest, it was much harder than I expected.
 
-What did I retain from Bootstrap's approach?
-* The 5 breakpoints.
-* Design "mobile-first".
+## First attempts: Bootstrap.
+My first attempts were with Bootstrap. I understand its power and can see why it has grown so popular. 
+
+However, for many reasons, I couldn't find my way in Bootstrap. In my opinion, its markup clutters the HTML, burying content under layers of `<div>` tags. Utility classes violate the principle of separation between content (html) and layout (css). The template seems rigid: why use 12 columns when you need, say, only 5? Finally, Bootstrap has its own learning curve anyway, which is not much smoother than the learning curve of CSS Flex and CSS Grid.
+
+The point is not to debate about the pros and cons of a framework; just explain why I chose to dispense of Bootstrap for this project.
+
+## CSS Flex and CSS Grid
+On LinkedIn Learning (_see above_), I found interesting resources about CSS Flex and CSS Grid. These are exciting CSS layout capabilities which are not difficult to manipulate.
+
+## Striving for simplicity
+I believe in a minimalist approach for both the HTML and the CSS files, with as little code as required to achieve a given task. 
+
+The HTML should reflect the actual content of the page. If you want to display an image, try using <img> first and style it. If you cannot achieve the desired effect, embed it in containers, add classes or ids. 
