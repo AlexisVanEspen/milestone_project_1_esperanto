@@ -1,0 +1,24 @@
+/*  Jesperanto! Esperanto in a nutshell. 
+    Author: Alexis Van Espen. 
+
+    Doctor Zam's card.
+*/
+
+.doctor-zam {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: top;
+    gap: 1em;
+}
+.doctor-zam p {
+    background-color: #fff;
+    border-color: #fff;
+    border-radius: 10%;
+    padding: 1em;
+    width: 100%;
+}
+
+.doctor-zam img {
+    width: 50%;
+}
