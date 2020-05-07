@@ -64,6 +64,16 @@ Besides the main course modules, I recurred to the following sources.
 ## W3Schools
 Every developer knows about [W3Schools](https://www.w3schools.com/). It's a comprehensive reference for several languages. 
 
+When I used an example code from this website, I mentioned it in the code like this:
+
+```css
+    /*  box-shadow definition taken from w3schools : 
+        https://www.w3schools.com/css/tryit.asp?filename=trycss3_box-shadow5 */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+```
+
+
 # Credits for images
 
 ## FlatIcon

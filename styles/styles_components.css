@@ -17,9 +17,49 @@
     border-color: #fff;
     border-radius: 10%;
     padding: 1em;
-    margin-bottom: -0.2em;
+    margin-bottom: -0.4em;
     width: 100%;
 }
 .doctor-zam img {
     width: 50%;
+}
+
+/*  –––––––––––-––– card-info ––––––––––––––– */
+.card-info {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas: 
+        "picture    title"
+        "picture    text"
+        ;
+    justify-content: space-between;
+    grid-gap: 1em;
+
+    /*  box-shadow definition taken from w3schools : 
+        https://www.w3schools.com/css/tryit.asp?filename=trycss3_box-shadow5 */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    padding: 1em;
+    margin: 1em;
+    height: 3em;
+    width: 50%;
+    /* transform: rotate(-10deg); */
+
+}
+
+.card-info > div {
+
+}
+.card-info img {
+    grid-area: picture;
+
+}
+.card-info h2 {
+    grid-area: title;
+
+}
+.card-info p {
+    grid-area: text;
+
 }

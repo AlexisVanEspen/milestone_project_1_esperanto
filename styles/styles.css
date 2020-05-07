@@ -57,7 +57,7 @@ a {
 /*  –––––––––––-––– HEADER ––––––––––––––– */
 header {
     display: grid;
-    grid-template-rows: 2fr 9fr 1fr;
+    grid-template-rows: 1fr 10fr 1fr;
     overflow: hidden;
     height: 90vh;
 }
@@ -86,8 +86,7 @@ header h1 {
     grid-column: 1 / 2;
     background: linear-gradient(to bottom right, var(--colour-01) 20%, #fff 100%);
     text-align: center;
-    padding-top: 1em;
-    margin-bottom: 1em;
+    padding: 0.5em;
 }
 
 /*  –––––––––––-––– HEADER : navigation ––––––––––––––– */
@@ -120,7 +119,6 @@ header nav a:nth-child(4n+3) {
 /*  –––––––––––-––– MAIN ––––––––––––––– */
 main {
     display: grid;
-    /* grid-template-rows: 1fr 1fr; */
     grid-template-columns: 1fr 2fr;
     grid-template-areas: 
         "doctor-explains    doctor-slides"
