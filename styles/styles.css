@@ -3,12 +3,15 @@
 */
 
 /*  Google Fonts. */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Nanum+Gothic:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
 
 /*  My own :root variables. */
 :root {
     --font-family-1: "Nanum Gothic", "Segoe UI", "Helvetica Neue", sans-serif;
     --font-family-2: "Montserrat", "Segoe UI", "Helvetica Neue", sans-serif;
+    --font-family-3: "Bad Script", cursive;
 
     /*  Colour scheme. */
     --colour-01: #009900;
@@ -119,30 +122,40 @@ header nav a:nth-child(4n+3) {
 /*  –––––––––––-––– MAIN ––––––––––––––– */
 main {
     display: grid;
+    grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 2fr;
     grid-template-areas: 
-        "doctor-explains    doctor-slides"
+        "doctor-explains-1  doctor-slides-1"
+        "doctor-explains-2  doctor-slides-2"
     ;
 }
 
 /*  –––––––––––-––– MAIN : doctor-explains ––––––––––––––– */
-#doctor-explains {
-    grid-area: doctor-explains;
+.doctor-explains {
     background-color: var(--colour-04);
     padding: 1em;
 }
+#doctor-explains-1 {
+    grid-area: doctor-explains-1;
+}
+#doctor-explains-2 {
+    grid-area: doctor-explains-2;
+}
 
 /*  –––––––––––-––– MAIN : doctor-slides ––––––––––––––– */
-#doctor-slides {
-    grid-area: doctor-slides;
+#doctor-slides-1 {
+    grid-area: doctor-slides-1;
 }
-#doctor-slides > article {
+#doctor-slides-2 {
+    grid-area: doctor-slides-2;
+}
+.doctor-slides > article {
     padding: 1em;
 }
-#doctor-slides > article:nth-child(odd) {
+.doctor-slides > article:nth-child(odd) {
     background-color: var(--colour-05);
 }
-#doctor-slides > article:nth-child(even) {
+.doctor-slides > article:nth-child(even) {
     background-color: var(--colour-06);
 }
 

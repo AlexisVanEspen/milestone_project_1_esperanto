@@ -7,24 +7,23 @@
 
 /*  –––––––––––-––– doctor-zam ––––––––––––––– */
 .doctor-zam {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    margin-top: 4em;
+    background: url('images/doctor_zam.svg') center bottom;
+    margin-top: 2em;
 }
 .doctor-zam p {
+    font-family: var(--font-family-3);
     background-color: #fff;
-    border-color: #fff;
-    border-radius: 10%;
+    border-radius: 5%;
     padding: 1em;
-    margin-bottom: -0.4em;
-    width: 100%;
-}
-.doctor-zam img {
-    width: 50%;
+    margin-bottom: -0.5em;
 }
 
 /*  –––––––––––-––– cards-deck-1 ––––––––––––––– */
+.cards-deck-1 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
 .cards-deck-1 > div {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
@@ -43,7 +42,6 @@
 
     padding: 1em;
     margin: 2em 1em;
-    height: 8em;
     width: 80%;
 }
 .cards-deck-1 > div img {
@@ -62,9 +60,17 @@
     transform: rotate(5deg);
 }
 
-/*  –––––––––––-––– card-video ––––––––––––––– */
-.card-video {
+/*  –––––––––––-––– message-attention ––––––––––––––– */
+.message-attention {
+    color: var(--colour-10);
+    font-size: 150%;
+    font-family: var(--font-family-2);
+    text-align: center;
+    padding: 1em;
+}
+
+/*  –––––––––––-––– card-video-iframe ––––––––––––––– */
+.card-video-iframe {
     padding: 1em;
     margin: 2em 1em;
-    height: 16em;
 }
