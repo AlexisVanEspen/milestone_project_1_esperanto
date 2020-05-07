@@ -24,8 +24,8 @@
     width: 50%;
 }
 
-/*  –––––––––––-––– card-info ––––––––––––––– */
-.card-info {
+/*  –––––––––––-––– cards-deck-1 ––––––––––––––– */
+.cards-deck-1 > div {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: 1fr 4fr;
@@ -34,6 +34,7 @@
         "picture    text"
         ;
     justify-content: space-between;
+    align-items: center;
     grid-gap: 1em;
 
     /*  box-shadow definition taken from w3schools : 
@@ -41,25 +42,29 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
     padding: 1em;
-    margin: 1em;
-    height: 3em;
-    width: 50%;
-    /* transform: rotate(-10deg); */
-
+    margin: 2em 1em;
+    height: 8em;
+    width: 80%;
 }
-
-.card-info > div {
-
-}
-.card-info img {
+.cards-deck-1 > div img {
     grid-area: picture;
-
 }
-.card-info h2 {
+.cards-deck-1 > div h2 {
     grid-area: title;
-
 }
-.card-info p {
+.cards-deck-1 > div p {
     grid-area: text;
+}
+.cards-deck-1 > div:nth-child(odd) {
+    transform: rotate(-5deg);
+}
+.cards-deck-1 > div:nth-child(even) {
+    transform: rotate(5deg);
+}
 
+/*  –––––––––––-––– card-video ––––––––––––––– */
+.card-video {
+    padding: 1em;
+    margin: 2em 1em;
+    height: 16em;
 }
