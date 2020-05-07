@@ -7,7 +7,9 @@
 
 /*  –––––––––––-––– doctor-zam ––––––––––––––– */
 .doctor-zam {
-    background: url('images/doctor_zam.svg') center bottom;
+    background: url('../images/doctor_zam.svg') no-repeat center bottom;
+    background-size: 50%;
+    height: 18em;
     margin-top: 2em;
 }
 .doctor-zam p {
@@ -15,7 +17,15 @@
     background-color: #fff;
     border-radius: 5%;
     padding: 1em;
-    margin-bottom: -0.5em;
+}
+
+/*  –––––––––––-––– message-zam ––––––––––––––– */
+.message-zam {
+    color: var(--colour-10);
+    font-family: var(--font-family-3);
+    text-align: center;
+    font-size: 200%;
+    padding: 1em;
 }
 
 /*  –––––––––––-––– cards-deck-1 ––––––––––––––– */
@@ -71,6 +81,18 @@
 
 /*  –––––––––––-––– card-video-iframe ––––––––––––––– */
 .card-video-iframe {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    width: 75%;
+    height: 50em;
     padding: 1em;
     margin: 2em 1em;
+}
+.card-video-iframe iframe {
+    border-radius: 5%;
+    height: 20em;
+}
+.card-video-iframe div {
+    padding: 1em 2em;
 }

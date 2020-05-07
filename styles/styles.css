@@ -128,6 +128,7 @@ main {
         "doctor-explains-1  doctor-slides-1"
         "doctor-explains-2  doctor-slides-2"
     ;
+    justify-content: center;
 }
 
 /*  –––––––––––-––– MAIN : doctor-explains ––––––––––––––– */
