@@ -61,6 +61,14 @@ Besides the main course modules, I recurred to the following sources.
 * Clarissa Peterson's [_Responsive Layout_](https://www.linkedin.com/learning/responsive-layout/ "Clarissa Peterson's Responsive Layout on LinkedIn Learning").
 * Morten Rand-Hendriksen's [_CSS: Advanced Layouts with Grid_](https://www.linkedin.com/learning/css-advanced-layouts-with-grid/ "Morten Rand-Hendriksen's CSS: Advanced Layouts with Grid on LinkedIn Learning").
 
+From the former, I mostly took away the way she initializes a stylesheet. This can be seen in the main stylesheet like this:
+
+```css
+/*  Initialize attributes (namely to anticipate responsive layout). 
+    Inspired by, then adapted from, Clarissa Peterson's Responsive Layout course on LinkedIn Learning (https://www.linkedin.com/learning/responsive-layout/). 
+*/
+```
+
 ## W3Schools
 Every developer knows about [W3Schools](https://www.w3schools.com/). It's a comprehensive reference for several languages. 
 
@@ -89,7 +97,7 @@ Some icons were found on [FlatIcon](https://www.flaticon.com/). The licenses are
 # The Heart of the Matter: Coding
 Following the videos of the modules was easy. Developing my own personal website proved a real challenge. To be honest, it was much harder than I expected.
 
-## First attempts: Bootstrap.
+## No Bootstrap.
 My first attempts were with Bootstrap. I understand its power and can see why it has grown so popular. 
 
 However, for many reasons, I couldn't find my way in Bootstrap. In my opinion, its markup clutters the HTML, burying content under layers of `<div>` tags. Utility classes violate the principle of separation between content (html) and layout (css). The template seems rigid: why use 12 columns when you need, say, only 5? Finally, Bootstrap has its own learning curve anyway, which is not much smoother than the learning curve of CSS Flex and CSS Grid.
@@ -102,4 +110,4 @@ On LinkedIn Learning (_see above_), I found interesting resources about CSS Flex
 ## Striving for simplicity
 I believe in a minimalist approach for both the HTML and the CSS files, with as little code as required to achieve a given task. 
 
-The HTML should reflect the actual content of the page. If you want to display an image, try using <img> first and style it. If you cannot achieve the desired effect, embed it in containers, add classes or ids. 
+The HTML should reflect the actual content of the page. If you want to display an image, try using an _img_ tag first and style it. If you cannot achieve the desired effect, embed it in containers, add classes or ids. 
