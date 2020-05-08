@@ -129,20 +129,17 @@ main {
 /*  –––––––––––-––– MAIN : doctor-explains ––––––––––––––– */
 .doctor-explains {
     background-color: var(--colour-04);
-    width: 30%;
+    padding: 2em;
+    width: 33%;
 }
 
 /*  –––––––––––-––– MAIN : doctor-slides ––––––––––––––– */
 .doctor-slides {
     background-color: var(--colour-05);
-    padding: 1em;
-    width: 60%;
+    padding: 2em;
+    width: 66%;
 }
 .doctor-slides > article {
-    padding: 1em;
-}
-.doctor-slides > article:nth-child(even) {
-    background-color: var(--colour-06);
 }
 
 /*  –––––––––––-––– FOOTER ––––––––––––––– */

@@ -9,8 +9,7 @@
 .doctor-zam {
     background: url('../images/doctor_zam.svg') no-repeat center bottom;
     background-size: 50%;
-    height: 18em;
-    margin-top: 2em;
+    height: 17em;
 }
 .doctor-zam p {
     font-family: var(--font-family-3);
@@ -24,7 +23,7 @@
     color: var(--colour-10);
     font-family: var(--font-family-3);
     text-align: center;
-    font-size: 200%;
+    font-size: 150%;
     padding: 1em;
 }
 
@@ -45,23 +44,22 @@
     justify-content: space-between;
     align-items: center;
     grid-gap: 1em;
-
     /*  box-shadow definition taken from w3schools : 
         https://www.w3schools.com/css/tryit.asp?filename=trycss3_box-shadow5 */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
     padding: 1em;
     margin: 2em 1em;
-    width: 80%;
 }
 .cards-deck-1 > div img {
     grid-area: picture;
 }
 .cards-deck-1 > div h2 {
     grid-area: title;
+    align-self: flex-end;
 }
 .cards-deck-1 > div p {
     grid-area: text;
+    align-self: flex-start;
 }
 .cards-deck-1 > div:nth-child(odd) {
     transform: rotate(-5deg);
@@ -70,29 +68,18 @@
     transform: rotate(5deg);
 }
 
-/*  –––––––––––-––– message-attention ––––––––––––––– */
-.message-attention {
-    color: var(--colour-10);
-    font-size: 150%;
-    font-family: var(--font-family-2);
-    text-align: center;
-    padding: 1em;
-}
-
 /*  –––––––––––-––– card-video-iframe ––––––––––––––– */
 .card-video-iframe {
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
-    width: 75%;
-    height: 50em;
-    padding: 1em;
-    margin: 2em 1em;
 }
 .card-video-iframe iframe {
-    border-radius: 5%;
-    height: 20em;
+    /*  box-shadow definition taken from w3schools : 
+    https://www.w3schools.com/css/tryit.asp?filename=trycss3_box-shadow5 */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 25em;
 }
 .card-video-iframe div {
-    padding: 1em 2em;
+    padding: 1em;
 }
