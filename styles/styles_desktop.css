@@ -146,19 +146,23 @@ main {
 
 /*  –––––––––––-––– FOOTER ––––––––––––––– */
 footer {
-    background-color: var(--colour-11);
-    padding: 2em;
+    display: grid;
+    grid-template-columns: 1fr 9fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--colour-01);
+    color: #fff;
+    padding: 1em;
 }
-footer nav {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-end;
+footer p {
+    padding: 1em;
 }
-footer nav a {
-    width: 5em;
+footer img {
+    border-radius: 50%;
+    width: 80%;
 }
-footer nav a img {
-    width: 75%;
+footer a img {
+    width: 70%;
 }
 
 /*  –––––––––––-––– doctor-zam ––––––––––––––– */
@@ -237,5 +241,5 @@ footer nav a img {
     height: 25em;
 }
 .card-video-iframe div {
-    padding: 1em;
+    padding: 2em 1em;
 }
