@@ -28,10 +28,13 @@
     --colour-10: #7f6000;
     --colour-11: #005b00;
     --colour-12: #f2f2f2;
+
+    /*  Colour scheme : gradients (b means begin) */
+    --colour-10-grad-1b: rgba(127, 96, 0, 0.25);
 }
 
-/*  Initialize attributes (namely to anticipate responsive layout). 
-    Inspired by, then adapted from, Clarissa Peterson's Responsive Layout course on LinkedIn Learning (https://www.linkedin.com/learning/responsive-layout/). 
+/*  Initialize attributes. 
+    Adapted from Clarissa Peterson's Responsive Layout course on LinkedIn Learning. 
 */
 html {
     box-sizing: border-box;
@@ -65,8 +68,13 @@ a {
 /*  –––––––––––-––– HEADER ––––––––––––––– */
 header {
     display: grid;
-    grid-template-rows: 1fr 10fr 1fr;
+    grid-template-rows: 1fr 6fr 1fr;
     overflow: hidden;
+    height: 70vh;
+}
+header#homepage {
+    display: grid;
+    grid-template-rows: 1fr 10fr 1fr;
     height: 90vh;
 }
 
@@ -74,17 +82,20 @@ header {
 header img {
     grid-row: 1 / 4;
     grid-column: 1 / 2;
+    z-index: -1;
+    transform: translateY(-4em);
+}
+header#homepage img {
     animation: header-image 5s;
     animation-fill-mode: backwards; 
-    z-index: -1;
 }
-
 @keyframes header-image {
     from {
         transform: scale(1.5);
     }
     to {
         transform: scale(1);
+        transform: translateY(-4em);
     }
 }
 
@@ -121,29 +132,6 @@ header nav a:nth-child(4n+3) {
     background-color: var(--colour-08);
 }
 
-/*  –––––––––––-––– MAIN ––––––––––––––– */
-main {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-}
-
-/*  –––––––––––-––– MAIN : doctor-explains ––––––––––––––– */
-.doctor-explains {
-    background-color: var(--colour-04);
-    padding: 2em;
-    width: 33%;
-}
-
-/*  –––––––––––-––– MAIN : doctor-slides ––––––––––––––– */
-.doctor-slides {
-    background-color: var(--colour-05);
-    padding: 2em;
-    width: 66%;
-}
-.doctor-slides > article {
-}
-
 /*  –––––––––––-––– FOOTER ––––––––––––––– */
 footer {
     display: grid;
@@ -163,6 +151,27 @@ footer img {
 }
 footer a img {
     width: 70%;
+}
+
+/*  –––––––––––-––– MAIN ––––––––––––––– */
+main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+/*  –––––––––––-––– MAIN : doctor-explains ––––––––––––––– */
+.doctor-explains {
+    background-color: var(--colour-04);
+    padding: 2em;
+    width: 33%;
+}
+
+/*  –––––––––––-––– MAIN : doctor-slides ––––––––––––––– */
+.doctor-slides {
+    background-color: var(--colour-05);
+    padding: 2em;
+    width: 67%;
 }
 
 /*  –––––––––––-––– doctor-zam ––––––––––––––– */
@@ -249,16 +258,12 @@ footer a img {
 
 }
 .timeline > div {
-    border-radius: 0 50%;
+    min-height: 12em;
     padding: 2em;
-    border: 3px solid var(--colour-10);
 }
 .timeline > div:nth-of-type(odd) {
-    border-top: 0;
-    border-right: 0;
+    background: linear-gradient(to right, var(--colour-10-grad-1b), var(--colour-05));
 }
 .timeline > div:nth-of-type(even) {
-    border-bottom: 0;
-    border-left: 0;
-
+    background: linear-gradient(to left, var(--colour-10-grad-1b), var(--colour-05));
 }

@@ -64,8 +64,8 @@ Besides the main course modules, I recurred to the following sources.
 From the former, I mostly took away the way she initializes a stylesheet. This can be seen in the main stylesheet like this:
 
 ```css
-/*  Initialize attributes (namely to anticipate responsive layout). 
-    Inspired by, then adapted from, Clarissa Peterson's Responsive Layout course on LinkedIn Learning (https://www.linkedin.com/learning/responsive-layout/). 
+/*  Initialize attributes. 
+    Adapted from Clarissa Peterson's Responsive Layout course on LinkedIn Learning. 
 */
 ```
 
@@ -80,7 +80,6 @@ When I used an example code from this website, I mentioned it in the code like t
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 ```
-
 
 # Credits for images
 
@@ -97,7 +96,7 @@ Some icons were found on [FlatIcon](https://www.flaticon.com/). The licenses are
 # The Heart of the Matter: Coding
 Following the videos of the modules was easy. Developing my own personal website proved a real challenge. To be honest, it was much harder than I expected.
 
-## No Bootstrap.
+## No Bootstrap
 My first attempts were with Bootstrap. I understand its power and can see why it has grown so popular. 
 
 However, for many reasons, I couldn't find my way in Bootstrap. In my opinion, its markup clutters the HTML, burying content under layers of `<div>` tags. Utility classes violate the principle of separation between content (html) and layout (css). The template seems rigid: why use 12 columns when you need, say, only 5? Finally, Bootstrap has its own learning curve anyway, which is not much smoother than the learning curve of CSS Flex and CSS Grid.
@@ -110,4 +109,6 @@ On LinkedIn Learning (_see above_), I found interesting resources about CSS Flex
 ## Striving for simplicity
 I believe in a minimalist approach for both the HTML and the CSS files, with as little code as required to achieve a given task. 
 
-The HTML should reflect the actual content of the page. If you want to display an image, try using an _img_ tag first and style it. If you cannot achieve the desired effect, embed it in containers, add classes or ids. 
+The HTML should reflect the actual content of the page. If you want to display an image, try using an _img_ tag first and style it. If you cannot achieve the desired effect, embed it in containers, add classes or ids.
+
+I strove to apply "Occam's Razor": a method to dispense of everything that doesn't make any difference. 
