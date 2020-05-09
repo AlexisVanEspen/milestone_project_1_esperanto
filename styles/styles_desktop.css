@@ -33,6 +33,12 @@
     --colour-10-grad-1b: rgba(127, 96, 0, 0.25);
 }
 
+/*  ---------------- Credits ----------------
+    Credit for the box-shadow definition. Thanks to w3schools : 
+    https://www.w3schools.com/css/tryit.asp?filename=trycss3_box-shadow5.
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+*/
+
 /*  Initialize attributes. 
     Adapted from Clarissa Peterson's Responsive Layout course on LinkedIn Learning. 
 */
@@ -162,18 +168,19 @@ main {
     flex-flow: row wrap;
     justify-content: space-between;
 }
+section, section * {
+    padding: 0.4em;
+}
 
 /*  –––––––––––-––– MAIN : doctor-explains ––––––––––––––– */
 .doctor-explains {
     background-color: var(--colour-04);
-    padding: 1em;
     width: 33%;
 }
 
 /*  –––––––––––-––– MAIN : doctor-slides ––––––––––––––– */
 .doctor-slides {
     background-color: var(--colour-05);
-    padding: 1em;
     width: 67%;
 }
 
@@ -181,13 +188,11 @@ main {
 .doctor-zam {
     display: flex;
     flex-flow: column nowrap;
-    padding: 1em 0;
 }
 .doctor-zam .speech-zam {
     font-family: var(--font-family-3);
     background-color: #fff;
     border-radius: 5%;
-    padding: 1em;
 }
 .doctor-zam .picture-zam {
     background: url('../images/doctor_zam.svg') no-repeat center bottom;
@@ -201,7 +206,19 @@ main {
     font-family: var(--font-family-3);
     text-align: center;
     font-size: 150%;
-    padding: 1em;
+}
+
+/*  –––––––––––-––– figure ––––––––––––––– */
+.figure {
+    display: flex;
+    flex-flow: column wrap;
+}
+.figure img {
+    /*  box-shadow definition taken from w3schools */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.figure figcaption {
 }
 
 /*  –––––––––––-––– cards-deck-1 ––––––––––––––– */
@@ -221,10 +238,8 @@ main {
     justify-content: space-between;
     align-items: center;
     grid-gap: 1em;
-    /*  box-shadow definition taken from w3schools : 
-        https://www.w3schools.com/css/tryit.asp?filename=trycss3_box-shadow5 */
+    /*  box-shadow definition taken from w3schools */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding: 1em;
     margin: 2em 1em;
 }
 .cards-deck-1 > div img {
@@ -252,13 +267,9 @@ main {
     justify-content: space-between;
 }
 .card-video-iframe iframe {
-    /*  box-shadow definition taken from w3schools : 
-    https://www.w3schools.com/css/tryit.asp?filename=trycss3_box-shadow5 */
+    /*  box-shadow definition taken from w3schools */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     height: 25em;
-}
-.card-video-iframe div {
-    padding: 2em 1em;
 }
 
 /*  –––––––––––-––– timeline ––––––––––––––– */
@@ -267,7 +278,6 @@ main {
 }
 .timeline > div {
     min-height: 12em;
-    padding: 2em;
 }
 .timeline > div:nth-of-type(odd) {
     background: linear-gradient(to right, var(--colour-10-grad-1b), var(--colour-05));
