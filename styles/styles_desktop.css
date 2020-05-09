@@ -166,28 +166,33 @@ main {
 /*  –––––––––––-––– MAIN : doctor-explains ––––––––––––––– */
 .doctor-explains {
     background-color: var(--colour-04);
-    padding: 2em;
+    padding: 1em;
     width: 33%;
 }
 
 /*  –––––––––––-––– MAIN : doctor-slides ––––––––––––––– */
 .doctor-slides {
     background-color: var(--colour-05);
-    padding: 2em;
+    padding: 1em;
     width: 67%;
 }
 
 /*  –––––––––––-––– doctor-zam ––––––––––––––– */
 .doctor-zam {
-    background: url('../images/doctor_zam.svg') no-repeat center bottom;
-    background-size: 50%;
-    height: 17em;
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 1em 0;
 }
-.doctor-zam p {
+.doctor-zam .speech-zam {
     font-family: var(--font-family-3);
     background-color: #fff;
     border-radius: 5%;
     padding: 1em;
+}
+.doctor-zam .picture-zam {
+    background: url('../images/doctor_zam.svg') no-repeat center bottom;
+    background-size: 50%;
+    height: 12em;
 }
 
 /*  –––––––––––-––– message-zam ––––––––––––––– */
