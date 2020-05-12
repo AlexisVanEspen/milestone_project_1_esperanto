@@ -89,7 +89,6 @@ header img {
     grid-row: 1 / 4;
     grid-column: 1 / 2;
     z-index: -1;
-    transform: translateY(-4em);
 }
 header#homepage img {
     animation: header-image 5s;
@@ -101,7 +100,6 @@ header#homepage img {
     }
     to {
         transform: scale(1);
-        transform: translateY(-4em);
     }
 }
 
@@ -168,7 +166,10 @@ main {
     flex-flow: row wrap;
     justify-content: space-between;
 }
-section, section * {
+section, article {
+    padding: 0.7em;
+}
+article * {
     padding: 0.4em;
 }
 
